@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="30dp"
+    android:background="#FFFFFF">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="50dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <ImageView
+            android:id="@+id/albumArt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cheri Cheri Lady"
+        android:fontFamily="@font/r"
+        android:textColor="#1D1D1F"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modern Talking"
+        android:textColor="#8E8E93"
+        android:fontFamily="@font/y"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp" />
+
+    <SeekBar
+        android:id="@+id/musicSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:splitTrack="false"
+        android:paddingStart="0dp"
+        android:paddingEnd="0dp"
+        android:progressDrawable="@drawable/custom_seekbar_track"
+        android:thumb="@drawable/custom_thumb" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/timeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:fontFamily="@font/y"
+            android:textColor="#8E8E93"
+            android:textSize="13sp"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/totalTimeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="03:46"
+            android:fontFamily="@font/y"
+            android:textColor="#8E8E93"
+            android:textSize="13sp"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="40dp">
+
+        <ImageView
+            android:id="@+id/btnPrev"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@android:drawable/ic_media_previous"
+            app:tint="#1D1D1F"
+            android:layout_marginEnd="40dp" />
+
+        <ImageView
+            android:id="@+id/btnPlay"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@android:drawable/ic_media_play"
+            app:tint="#1D1D1F" />
+
+        <ImageView
+            android:id="@+id/btnNext"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@android:drawable/ic_media_next"
+            app:tint="#1D1D1F"
+            android:layout_marginStart="40dp" />
+    </LinearLayout>
+
+</LinearLayout>
