@@ -7,6 +7,10 @@
   <b>Synchronized Animations • Haptic Feedback • iOS Aesthetics • Custom UI Components</b>
 </p>
 
+
+https://www.youtube.com/watch?v=1QZj80s2Y4A
+
+
 <p align="center">
 
 <img width="1280" height="621" alt="music" src="https://github.com/user-attachments/assets/94ae1c73-640c-457f-a284-1f1ee77cd28a" />
